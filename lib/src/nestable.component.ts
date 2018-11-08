@@ -623,11 +623,11 @@ export class NestableComponent implements OnInit, OnDestroy {
           this.list,
           Number.parseInt(placeholderContainer.id)
         );
-        if (!placeholderContainer.children) {
-          placeholderContainer.children = [];
-          placeholderContainer.children.push({ ...this.dragModel });
+        if (!placeholderContainer.properties) {
+          placeholderContainer.properties = [];
+          placeholderContainer.properties.push({ ...this.dragModel });
         } else {
-          placeholderContainer.children.splice(
+          placeholderContainer.properties.splice(
             Array.prototype.indexOf.call(
               this._placeholder.parentElement.children,
               this._placeholder

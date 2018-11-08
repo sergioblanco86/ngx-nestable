@@ -1,9 +1,9 @@
 {
-  "name": "ngx-nestable",
+  "name": "@sergioblanco86/ngx-nestable",
   "description": "Nestable list with drag and drop for Angular",
   "version": "0.9.1",
   "license": "MIT",
-  "homepage": "https://github.com/cybercomet/ngx-nestable",
+  "homepage": "https://github.com/sergioblanco86/ngx-nestable",
   "private": false,
   "contributors": [
     { 
