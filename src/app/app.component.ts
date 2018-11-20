@@ -16,12 +16,12 @@ export class AppComponent {
     { 'id': 1 },
     {
       'expanded': true,
-      'id': 2, 'children': [
+      'id': 2, 'properties': [
         { 'id': 3 },
         { 'id': 4 },
         {
           'expanded': false,
-          'id': 5, 'children': [
+          'id': 5, 'properties': [
             { 'id': 6 },
             { 'id': 7 },
             { 'id': 8 }
@@ -34,7 +34,7 @@ export class AppComponent {
     { 'id': 11 },
     {
       'id': 12,
-      'children': [
+      'properties': [
         { 'id': 13 }
       ]
     },

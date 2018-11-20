@@ -3,9 +3,11 @@
   <h1 align="center">Angular Nestable List</h1>
 </p>
 
-# ngx-nestable
+# ngx-nestable modified
 Nestable list for Angular4 and beyond. This is a Angular adaptation of Jquery [Nestable](https://dbushell.com/Nestable/) library.
 [Demo](https://cybercomet.github.io/ngx-nestable)
+This version has been modified to fit special necesities. The nested property 'children' has been chaged for  'properties'.
+Once you run NPM INSTALL then go to node_modules/ng-packagr, delete de node_modules folder, open package.json and remove all the ^ and ~ and then run NPM INSTALL here. There's an issue with this package.
 
 ## Features
 * Drag and Drop
@@ -42,12 +44,12 @@ app.component.ts
     { 'id': 1 },
     {
       'expanded': true,
-      'id': 2, 'children': [
+      'id': 2, 'properties': [
         { 'id': 3 },
         { 'id': 4 },
         {
           'expanded': false,
-          'id': 5, 'children': [
+          'id': 5, 'properties': [
             { 'id': 6 },
             { 'id': 7 },
             { 'id': 8 }
@@ -71,7 +73,7 @@ app.html
       <mat-icon>drag_handle</mat-icon>
     </button>
     
-    <button mat-icon-button *ngIf="row.item.children && row.item.children.length; else empty_item" [ngxNestableExpandCollapse]="row">
+    <button mat-icon-button *ngIf="row.item.properties && row.item.properties.length; else empty_item" [ngxNestableExpandCollapse]="row">
       <mat-icon>{{row.item.$$expanded ? 'keyboard_arrow_down' : 'keyboard_arrow_right'}}
       </mat-icon>
     </button>

@@ -56,7 +56,7 @@
     <mat-icon>drag_handle</mat-icon>
   </button>
   <button mat-icon-button
-          *ngIf="row.item.children && row.item.children.length; else empty_item"
+          *ngIf="row.item.properties && row.item.properties.length; else empty_item"
           [ngxNestableExpandCollapse]="row">
     <mat-icon>{{row.item.$$expanded ? 'keyboard_arrow_down' : 'keyboard_arrow_right'}}
     </mat-icon>

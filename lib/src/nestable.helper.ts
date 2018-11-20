@@ -6,8 +6,8 @@ export const _traverseChildren = (tree, callback, parent = null) => {
 
         if (callbackResult) { break; }
 
-        if (item.children) {
-            _traverseChildren(item.children, callback, item);
+        if (item.properties) {
+            _traverseChildren(item.properties, callback, item);
         }
     }
 };
